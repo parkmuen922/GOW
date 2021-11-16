@@ -1,14 +1,29 @@
 @font-face {
-    font-family: 'GowunDodum-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-family: 'Vitro_core';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/Vitro_core.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
+} /*폰트*/
+@keyframes text-pop-up-br {
+    0% {
+      transform: translateY(0) translateX(0);
+      transform-origin: 50% 50%;
+      text-shadow: none;
+    }
+    100% {
+      transform: translateY(10px) translateX(10px);
+      transform-origin: 50% 50%;
+      text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+  }
+  
 body {
-    font-family: 'GowunDodum-Regular';
+    font-family: 'Vitro_core';
 }
-img {
-    float: left;
+.logo {
+    margin-top: -2%;
+	animation: text-pop-up-br 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    font-size: 200%;
 }
 .trans {
     float: right;
@@ -28,21 +43,10 @@ table {
     width: 100%;
     border-collapse: collapse;
     border: 10%;
-    font-size: 150%;
+    font-size: 140%;
 }
-
 th {
     padding-top: 0.5%;
     padding-bottom: 0.5%;
 }
 
-th:nth-child(1) {
-    width: 10%;
-}
-th:nth-child(2) {
-    width: 30%;
-}
-
-th:nth-child(3), th:nth-child(4), th:nth-child(5) {
-    width: 20%;
-}
