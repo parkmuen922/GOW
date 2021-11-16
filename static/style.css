@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'GowunDodum-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'GowunDodum-Regular';
+}
+img {
+    float: left;
+}
+.trans {
+    float: right;
+    margin-bottom: 5px;
+}
+button {
+    font-size: 150%;
+    padding: 0;
+    border: none;
+    background: none;
+}
+button:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 10%;
+    font-size: 150%;
+}
+
+th {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
+th:nth-child(1) {
+    width: 10%;
+}
+th:nth-child(2) {
+    width: 30%;
+}
+
+th:nth-child(3), th:nth-child(4), th:nth-child(5) {
+    width: 20%;
+}
