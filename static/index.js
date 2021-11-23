@@ -1,3 +1,22 @@
+function ViewLayer(){
+    //만일 Pop라는 녀석이 닫혀있다면??
+    if(document.getElementById("tabl").style.display=="none"){
+       //열어주어라
+       document.getElementById("tabl").style.display='inline';
+       document.getElementById("#myChart").style.display='none';
+    //그렇지 않은 모든 경우라면??
+    }
+  }
+function ViewLayer2(){
+    //만일 Pop라는 녀석이 닫혀있다면??
+    if(document.getElementById("#myChart").style.display=="none"){
+       //열어주어라
+       document.getElementById("#myChart").style.display='inline';
+       document.getElementById("tabl").style.display='none';
+    //그렇지 않은 모든 경우라면??
+    }
+  }
+
 var context = document
             .getElementById('myChart')
             .getContext('2d');
